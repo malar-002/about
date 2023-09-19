@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course registers</title>
+</head>
+<body>
+    <main>
+        <section>
+          <form style="font-size: 20px;"  action="https://httpbin.org/post" method="post">
+            <h2>Registration Form</h2>
+            <fieldset>
+              <legend>Fill the Details</legend>
+              <table >
+                <tr>
+                  <td>Full Name:</td>
+                  <td class="space">
+                    <input
+                      type="text"
+                      name="fullName"
+                      id="fullName" placeholder="Enter your name"
+                      autocomplete="on"
+                      required
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>E-mail:</td>
+                  <td >
+                    <input type="email" name="email" id="email" placeholder="abc@gmail.com" autocomplete="on"
+                    required>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Password:</td>
+                  <td >
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="******"
+                      required
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mobile No:</td>
+                  <td >
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      pattern="[0-9]{10}"
+                      placeholder="9876589088"
+                      autocomplete="on"
+                      required
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Gender:</td>
+                  <td  >
+                    <input type="radio" name="gender" id="male" >Male
+                    <input type="radio" name="gender" id="Female" >Female
+                    <input type="radio" name="gender" id="other" >Other
+                  </td>
+                </tr>
+                <tr>
+                  <td>Select Course:</td>
+                  <td >
+                    <select name="course" id="course" >
+                      <option selected>Data Analytics</option>
+                      <option >AI/Machine learning</option>
+                      <option >Automation</option>
+                      <option >Data Science</option>
+                      <option >App Development</option>
+                      <option >Web development</option>
+                      <option >UI / UX</option>
+                      <option >Marketing</option>
+                      <option >Trading</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Languages:</td>
+                  <td >
+                    <input type="checkbox" name="lang1">
+                    <label>Tamil</label>
+                    <input type="checkbox" name="lang2">
+                    <label>English</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" >
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="50"
+                      rows="10"
+                      placeholder="Comment Area"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" >
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+          </form>
+        </section>
+      
+    </main>
+
+</body>
+</html>
